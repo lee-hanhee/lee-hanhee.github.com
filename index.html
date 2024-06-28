@@ -1,0 +1,377 @@
+<!DOCTYPE html> <!-- Declaration of the document type -->
+<html lang ="en"> <!-- Language of the document -->
+<head> <!-- Head of the document which includes the metadata of the page -->
+    <meta charset="UTF-8"> <!-- Character set which includes all the characters for the language -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility with IE which is the latest version to help with the rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport to help with the responsiveness of the website -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the css file -->
+    <title>Hanhee Lee</title> <!-- Title of the page -->
+    <script src="https://kit.fontawesome.com/afe73bd5ad.js" crossorigin="anonymous"></script> <!-- Link to the fontawesome library -->
+</head>
+<body>
+<div id="header"> <!-- Header of the page -->
+    <div class="container"> <!-- Container to help with the responsiveness of the website -->
+        <nav> <!-- Navigation bar of the page -->
+            <img src="images/logo.png" class="logo"> <!-- Logo of the page -->
+            <ul id ="sidemenu"> <!-- Unordered list of the navigation bar -->
+                <li><a href="#header">Home</a></li> 
+                <li><a href="#about">About</a></li>
+                <li><a href="#course-notes">Course Notes</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#social-media">Socials</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Resume</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i> <!-- X icon for the responsive design -->
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!-- Bars icon for the responsive design -->
+        </nav>
+        <div class="header-text"> <!-- Text of the header -->
+            <p>Engineering Student</p> <!-- Subtitle of the header -->
+            <h1>Hi, I'm <span>Hanhee Lee</span></h1> <!-- Title of the header -->
+        </div>
+    </div>
+</div>
+
+<!-- ------------about------------  -->
+
+<div id="about"> <!-- About section of the page -->
+    <div class="container"> <!-- Container to help with the responsiveness of the website -->
+        <div class="row"> <!-- Row of the about section -->
+            <div class="about-col-1"> <!-- Column 1 of the about section -->
+                <img src="images/user.png"> <!-- Image of the about section -->
+            </div> 
+            <div class="about-col-2"> <!-- Column 2 of the about section -->
+                <h1 class="sub-title">About Me</h1> <!-- Subtitle of the about section -->
+                <p> Hi, my name is Hanhee! I’m an alumni of Ursuline College Chatham, who averaged a 97% in Grade 12 while being mainly
+                involved in Hockey, Varsity Soccer, and Ultimate Frisbee. I’m now a 2nd year university student at the University of
+                Toronto in the Engineering Science program. I’m currently working as a Math Tutor, where I help Grades 12 and 1st Year
+                University Students in mathematics.</p> <!-- Text of the about section -->
+                
+                <div class="tab-titles"> <!-- Tab titles of the about section -->
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills"> <!-- id: skills should be the same as the onclick function -->
+                    <ul>
+                        <li><span>Coding</span><br>Python, C, & MATLAB</li>
+                        <li><span>Machine Learning</span><br>Regression & Classification</li>
+                        <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2024 - Current</span><br>Research Intern at National University of Singapore</li>
+                        <li><span>Aug 2023 - Current</span><br>Mathematics Tutor</li>
+                        <li><span>Sept 2023 - May 2024</span><br>VP Content at Social Change and Youth Leadership Conference</li>
+                        <li><span>Sept 2023 - Dec 2023</span><br>Airframe Landing Gear Lead</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2T6 + PEY</span><br>Machine Intelligence at University of Toronto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------course notes------------  -->
+ <div id="course-notes"> <!-- Course notes section of the page -->
+    <div class="container"> <!-- Container to help with the responsiveness of the website -->
+        <h1 class="sub-title">Course Notes</h1> <!-- Subtitle of the course notes section -->
+        <div class="courses-list"> <!-- List of the courses in the course notes section -->
+            <div> <!-- Course 1 -->
+                <i class="fa-solid fa-code"></i>
+                <h2>BME205</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem 
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus 
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div> <!-- Course 2 -->
+                <i class="fa-solid fa-vector-square"></i>
+                <h2>ECE259</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ECE286</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ESC204</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>PHY294</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>AER210</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>CHE260</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ECE253</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ESC203</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>MAT292</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>PHY293</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ECE159</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ESC102</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ESC190</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ESC195</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>MAT185</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>MSE160</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>CIV102</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ESC101</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ESC103</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ESC180</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>ESC194</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>PHY180</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eius reiciendis distinctio ratione, rem maiores sit dolore voluptatem
+                    provident cumque voluptate molestias amet atque ipsa et illum repellendus
+                    vel odio fuga?</p>
+                <a href="#">View Notes</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- ------------portfolio------------  -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Project 1</h3>
+                    <p>Project Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Project 2</h3>
+                    <p>Project Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Project 3</h3>
+                    <p>Project Description</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">View More</a>
+    </div>
+ </div>
+
+<!-- ------------social media------------  -->
+<div id="social-media">
+    <div class="container">
+        <div class="contact">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/hanhee_lee/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hanheelee26/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/lee-hanhee"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Hanhee Lee 2024</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links'); /* Get all the elements with the class name tab-links */
+    var tabcontents = document.getElementsByClassName('tab-contents'); /* Get all the elements with the class name tab-contents */
+
+    function opentab(tabname) { /* Function to open the tab */
+        for (tablink of tablinks) { /* Loop through all the tablinks */
+            tablink.classList.remove('active-link'); /* Remove the active-link class */
+        }
+        for (tabcontent of tabcontents) { /* Loop through all the tabcontents */
+            tabcontent.classList.remove('active-tab'); /* Remove the active-tab class */
+        }
+        event.currentTarget.classList.add('active-link'); /* Add the active-link class to the current target */
+        document.getElementById(tabname).classList.add('active-tab'); /* Add the active-tab class to the tabname */
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById('sidemenu'); /* Get the element with the id sidemenu */
+
+    function openmenu() { /* Function to open the menu */
+        sidemenu.style.right = '0'; /* Set the right of the sidemenu to 0 */
+    }
+
+    function closemenu() { /* Function to close the menu */
+        sidemenu.style.right = '-200px'; /* Set the right of the sidemenu to -250px */
+    }   
+
+</script>
+</body>
+</html>
