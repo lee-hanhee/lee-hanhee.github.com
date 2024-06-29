@@ -70,8 +70,8 @@ nav ul li a:hover::after{ /* Hover effect */
 }
 
 .hero-image{
-    width: 25%;
-    height: 25%;
+    width: 35%;
+    height: 35%;
     object-fit: cover; /* Cover the entire element */
     margin-top: -300px; /* Margin top */
 }
