@@ -74,7 +74,7 @@ nav ul li a:hover::after{ /* Hover effect */
     width: 35%;
     height: 35%;
     object-fit: cover; /* Cover the entire element */
-    margin-top: -300px; /* Margin top */
+    margin-top: -250px; /* Margin top */
 }
 
 .header-text h1{
