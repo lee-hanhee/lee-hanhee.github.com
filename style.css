@@ -456,6 +456,11 @@ nav .fa-x{
     .about-col-1{
         margin-bottom: 30px;
     }
+    .about-col-1 img{
+        max-width: 100%; /* Width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 15px; /* Border radius */
+    }
     .about-col-2{
         font-size: 14px;
     }
