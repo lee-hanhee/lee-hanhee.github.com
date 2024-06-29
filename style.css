@@ -20,15 +20,11 @@ body{
     background: #080808; /* Background color */
     color: #fff; /* Text color */
 }
-
 #header{
     width: 100%; /* 100% of the viewport width */
     height: 100vh; /* 100% of the viewport height */
-    background-image: url(images/background.png); /* Background image */
-    background-size: cover; /* Cover the entire element */
-    background-position: center; /* Center the background image */
+    align-items: center; /* Align items vertically */
 }
-
 .container{
     padding: 10px 10%; /* Padding */
 }
@@ -39,24 +35,20 @@ nav{
     justify-content: space-between; /* Space between the items */
     flex-wrap: wrap; /* Wrap the items */
 }
-
 .logo{
     width: 140 px; /* Width */
 }
-
 nav ul li{
     display: inline-block; /* Display inline */
     list-style: none; /* Remove default list style */
     margin: 10px 20px; /* Margin where 10px is top and bottom and 20px is left and right */
 }
-
 nav ul li a{ /* a is a tag which is used for links */
     color: #fff; /* Text color */
     text-decoration: none; /* Remove underline */
     font-size: 18px; /* Font size */
     position: relative; /* Position */
 }
-
 nav ul li a::after{ /* ::after is a pseudo element which is used to add content after the element */
     content: ''; /* Empty content */
     width: 0; /* Width */
@@ -67,7 +59,6 @@ nav ul li a::after{ /* ::after is a pseudo element which is used to add content 
     bottom: -6px; /* Bottom */
     transition: 0.5s; /* Transition effect */
 }
-
 nav ul li a:hover::after{ /* Hover effect */
     width: 100%; /* Width */
 }
@@ -75,6 +66,14 @@ nav ul li a:hover::after{ /* Hover effect */
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    text-align: center;
+}
+
+.hero-image{
+    width: 25%;
+    height: 25%;
+    object-fit: cover; /* Cover the entire element */
+    margin-top: -300px; /* Margin top */
 }
 
 .header-text h1{
@@ -85,6 +84,7 @@ nav ul li a:hover::after{ /* Hover effect */
 .header-text h1 span{
     color: #ff004f;
 }
+
 /* ------------------about------------------ */
 #about{
     padding: 80px 0; /* Padding */
