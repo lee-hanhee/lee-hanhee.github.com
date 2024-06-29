@@ -323,8 +323,13 @@ nav .fa-x{
 }
 
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/phone-background.png);
+    .hero-image {
+        width: 35%;
+        height: 35%;
+        object-fit: cover;
+        /* Cover the entire element */
+        margin-top: -150px;
+        /* Margin top */
     }
     .header-text{
         margin-top: 100%;
