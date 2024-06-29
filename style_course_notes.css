@@ -166,6 +166,23 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
+.btn2 {
+    display: inline-block;
+    margin: -15px auto;
+    width: fit-content;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    /* Transition effect for the background */
+}
+
+.btn2:hover {
+    background: #ff6680;
+}
+
 /* ------------------contact------------------ */
 .contact {
     flex-basis: 100%;
