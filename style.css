@@ -57,7 +57,7 @@ nav ul li a::after{ /* ::after is a pseudo element which is used to add content 
     position: absolute; /* Position */
     left: 0; /* Left */
     bottom: -6px; /* Bottom */
-    transition: 0.5s; /* Transition effect */
+    transition: 1s; /* Transition effect */
 }
 nav ul li a:hover::after{ /* Hover effect */
     width: 100%; /* Width */
@@ -182,6 +182,12 @@ nav ul li a:hover::after{ /* Hover effect */
     margin-bottom: 30px;
 }
 
+.courses-list div h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
 .courses-list div h2{
     font-size: 30px;
     font-weight: 500; 
