@@ -110,6 +110,10 @@ nav ul li a:hover::after{ /* Hover effect */
     /* This will result in 5% space between the two elements (i.e. 35% + 5% + 60% = 100%) */
 }
 
+.about-col-2 p{
+    margin-top: 20px; /* Margin top */
+}
+
 .sub-title{
     font-size: 60px; /* Font size */
     font-weight: 600; /* Font weight */
