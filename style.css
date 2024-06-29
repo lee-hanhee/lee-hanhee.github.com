@@ -318,7 +318,7 @@ nav ul li a:hover::after{ /* Hover effect */
     font-weight: 300;
     margin-top: 20px;
 }
-/* ----------------------css for small screens ------------------ */
+/* ----------------------css for iphone screens ------------------ */
 nav .fa-bars{
     display: none;
 }
@@ -341,6 +341,76 @@ nav .fa-x{
     }
     .header-text h1{
         font-size: 30px;
+    }
+    nav .fa-bars{
+        display: block;
+        font-size: 25px;
+    }
+    nav .fa-x{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px; /* because the width is 200. So, it will be hidden */
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2; /* Z-index which specifies the stack order of an element */
+        transition: right 0.5s; /* Transition effect */
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-x{
+        position: absolute; 
+        top: 25px; 
+        left: 25px; 
+        cursor: pointer;
+    }
+    nav ul .fa-bars{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%; /* Flex basis in which the element occupies 100% of the parent element */
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+}
+
+/* ----------------------css for ipad screens ------------------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .hero-image {
+        width: 75%;
+        height: auto;
+        object-fit: cover;
+        /* Cover the entire element */
+        margin-top: -2000px;
+        /* Margin top */
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 30px;
+    }
+    .header-text h1{
+        font-size: 100px;
     }
     nav .fa-bars{
         display: block;
