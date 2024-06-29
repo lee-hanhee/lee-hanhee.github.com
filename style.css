@@ -476,7 +476,7 @@ nav .fa-x{
         height: auto;
         object-fit: cover;
         /* Cover the entire element */
-        margin-top: -2000px;
+        margin-top: 20px;
         /* Margin top */
     }
     .header-text{
