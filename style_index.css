@@ -114,6 +114,7 @@ nav ul li a:hover::after{ /* Hover effect */
     font-size: 60px; /* Font size */
     font-weight: 600; /* Font weight */
     color: #fff; /* Text color */
+    text-align: center; /* Text alignment */
 }
 
 .tab-titles{
